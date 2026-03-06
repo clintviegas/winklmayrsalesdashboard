@@ -42,7 +42,7 @@ const doughnutCenterTextPlugin = {
       ctx.fillStyle = '#1a1a1a';
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
-      ctx.fillText(text, centerX, centerY - 14);
+      ctx.fillText(text, centerX, centerY - 20);
     }
 
     if (subtext) {
@@ -50,7 +50,7 @@ const doughnutCenterTextPlugin = {
       ctx.fillStyle = '#888';
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
-      ctx.fillText(subtext, centerX, centerY + 14);
+      ctx.fillText(subtext, centerX, centerY + 20);
     }
 
     ctx.save();

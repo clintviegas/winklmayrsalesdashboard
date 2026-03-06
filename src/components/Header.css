@@ -36,7 +36,7 @@
 .ribbon-area {
   display: flex;
   align-items: center;
-  gap: 1px;
+  gap: 4px;
   height: 45px;
   min-width: 0;
 }
@@ -65,7 +65,7 @@
 }
 
 .ribbon-scalify-logo {
-  height: 50px;
+  height: 54px;
   width: auto;
   object-fit: contain;
   filter: brightness(1.05);
@@ -118,11 +118,11 @@
     margin-top: 6px;
   }
   .ribbon-scalify-logo {
-    height: 40px;
+    height: 42px;
   }
   .ribbon-area {
     height: 45px;
-    gap: 2px;
+    gap: 3px;
   }
   .ribbon-divider {
     font-size: 26px;
@@ -145,11 +145,11 @@
     margin-top: 4px;
   }
   .ribbon-scalify-logo {
-    height: 30px;
+    height: 32px;
   }
   .ribbon-area {
     height: 40px;
-    gap: 1px;
+    gap: 2px;
   }
   .ribbon-divider {
     font-size: 20px;
