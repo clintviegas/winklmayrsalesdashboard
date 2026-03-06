@@ -37,12 +37,17 @@ const doughnutCenterTextPlugin = {
     const text = chart.data.datasets[0].centerText || '';
     const subtext = chart.data.datasets[0].centerSubText || '';
 
+    // Scale text offsets based on chart height for better mobile support
+    const heightScale = height / 300; // 300px is the base height
+    const subtextOffset = 28 * heightScale;
+    const textOffset = 10 * heightScale;
+
     if (subtext) {
       ctx.font = '14px DM Sans';
       ctx.fillStyle = '#888';
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
-      ctx.fillText(subtext, centerX, centerY - 32);
+      ctx.fillText(subtext, centerX, centerY - subtextOffset);
     }
 
     if (text) {
@@ -50,7 +55,7 @@ const doughnutCenterTextPlugin = {
       ctx.fillStyle = '#1a1a1a';
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
-      ctx.fillText(text, centerX, centerY + 8);
+      ctx.fillText(text, centerX, centerY + textOffset);
     }
 
     ctx.save();
