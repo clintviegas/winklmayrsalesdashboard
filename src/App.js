@@ -31,6 +31,7 @@ function App() {
   const [filters, setFilters] = useState(INITIAL_FILTERS);
   const [lastUpdate, setLastUpdate] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [showDashboard, setShowDashboard] = useState(false);
   const [error, setError] = useState(null);
 
   // Fetch data from Google Sheets
@@ -80,11 +81,17 @@ function App() {
       setLastUpdate(new Date().toLocaleTimeString());
       setError(null);
       setLoading(false);
+      // Add 3-second pause before showing dashboard
+      setTimeout(() => {
+        setShowDashboard(true);
+      }, 3000);
     } catch (err) {
       const message = err instanceof Error ? err.message : String(err);
       console.error('Failed to fetch data:', err);
       setError(message);
       setLoading(false);
+      // Show dashboard immediately if error
+      setShowDashboard(true);
     }
   }, []);
 
@@ -123,7 +130,7 @@ function App() {
     setFilters(INITIAL_FILTERS);
   }, []);
 
-  if (loading) {
+  if (loading || !showDashboard) {
     return (
       <div className="loading-overlay">
         <div className="loading-logo-container">

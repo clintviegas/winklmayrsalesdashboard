@@ -1,6 +1,6 @@
 import React from 'react';
 import { RefreshCw } from 'lucide-react';
-import titleLogo from '../assets/logos/title-logo.svg';
+import winklmayrWordmark from '../assets/logos/winklmayr-wordmark.svg';
 import scalifyLogo from '../assets/logos/scalify-footer.svg';
 import './Header.css';
 
@@ -14,7 +14,7 @@ function Header({ lastUpdate, onRefresh }) {
           </a>
           <div className="ribbon-divider">×</div>
           <a href="https://winklmayr.com/" target="_blank" rel="noopener noreferrer" className="ribbon-link">
-            <img src={titleLogo} alt="WiNKLMAYR x Mercedes-Benz" className="header-logo header-logo-white" />
+            <img src={winklmayrWordmark} alt="WiNKLMAYR" className="header-logo header-logo-white" />
           </a>
         </div>
       </div>

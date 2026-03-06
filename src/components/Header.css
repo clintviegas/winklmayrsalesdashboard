@@ -1,7 +1,7 @@
 /* ═══════ HEADER ═══════ */
 .dash-header {
   background: var(--black);
-  padding: 14px var(--space-xl);
+  padding: 8px var(--space-xl);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -14,16 +14,17 @@
 .dash-header-left {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 8px;
   flex: 1;
   max-width: 600px;
 }
 
 .header-logo {
-  height: 70px;
+  height: 35px;
   width: auto;
   object-fit: contain;
   filter: brightness(1.05);
+  margin-top: 8px;
 }
 
 .header-logo-white {
@@ -34,11 +35,12 @@
 .ribbon-area {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 2px;
+  height: 50px;
 }
 
 .ribbon-divider {
-  font-size: 42px;
+  font-size: 28px;
   font-weight: 300;
   color: #D4AF37;
   opacity: 0.7;
@@ -60,7 +62,7 @@
 }
 
 .ribbon-scalify-logo {
-  height: 48px;
+  height: 50px;
   width: auto;
   object-fit: contain;
   filter: brightness(1.05);
@@ -106,6 +108,9 @@
     padding: 12px var(--space-md);
   }
   .header-logo {
+    height: 60px;
+  }
+  .ribbon-scalify-logo {
     height: 48px;
   }
 }
@@ -115,6 +120,9 @@
     display: none;
   }
   .header-logo {
+    height: 50px;
+  }
+  .ribbon-scalify-logo {
     height: 42px;
   }
 }
