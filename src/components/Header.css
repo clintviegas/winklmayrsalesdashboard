@@ -14,6 +14,7 @@
 .dash-header-left {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   flex: 1;
   min-width: 0;
@@ -108,17 +109,16 @@
 @media (max-width: 768px) {
   .dash-header {
     padding: 8px 12px;
-    justify-content: center;
   }
   .dash-header-left {
-    flex: 0;
+    flex: 1;
   }
   .header-logo {
     height: 30px;
     margin-top: 6px;
   }
   .ribbon-scalify-logo {
-    height: 38px;
+    height: 40px;
   }
   .ribbon-area {
     height: 45px;
@@ -133,10 +133,9 @@
 @media (max-width: 480px) {
   .dash-header {
     padding: 6px 12px;
-    justify-content: center;
   }
   .dash-header-left {
-    flex: 0;
+    flex: 1;
   }
   .dash-header-right {
     display: none;
@@ -146,7 +145,7 @@
     margin-top: 4px;
   }
   .ribbon-scalify-logo {
-    height: 28px;
+    height: 30px;
   }
   .ribbon-area {
     height: 40px;
