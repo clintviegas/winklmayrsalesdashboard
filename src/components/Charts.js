@@ -37,20 +37,20 @@ const doughnutCenterTextPlugin = {
     const text = chart.data.datasets[0].centerText || '';
     const subtext = chart.data.datasets[0].centerSubText || '';
 
-    if (text) {
-      ctx.font = 'bold 48px DM Sans';
-      ctx.fillStyle = '#1a1a1a';
-      ctx.textAlign = 'center';
-      ctx.textBaseline = 'middle';
-      ctx.fillText(text, centerX, centerY - 20);
-    }
-
     if (subtext) {
       ctx.font = '14px DM Sans';
       ctx.fillStyle = '#888';
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
-      ctx.fillText(subtext, centerX, centerY + 20);
+      ctx.fillText(subtext, centerX, centerY - 32);
+    }
+
+    if (text) {
+      ctx.font = 'bold 48px DM Sans';
+      ctx.fillStyle = '#1a1a1a';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText(text, centerX, centerY + 8);
     }
 
     ctx.save();
