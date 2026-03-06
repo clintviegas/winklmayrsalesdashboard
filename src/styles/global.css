@@ -1,0 +1,97 @@
+/* ═══════════════════════════════════════════════════
+   WiNKLMAYR Sales Dashboard — Global Styles
+   ═══════════════════════════════════════════════════ */
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Surfaces */
+  --bg: #f5f4f1;
+  --surface: #ffffff;
+  --surface-alt: #faf9f7;
+  --border: #e8e6e1;
+
+  /* Text */
+  --text: #1a1a1a;
+  --text-secondary: #777;
+  --text-muted: #aaa;
+
+  /* Brand */
+  --black: #0a0a0a;
+  --dark: #141414;
+  --brand: #333333;
+  --orange: #e8611a;
+  --orange-light: rgba(232, 97, 26, 0.08);
+  --orange-mid: rgba(232, 97, 26, 0.15);
+
+  /* Accent palette */
+  --gold: #b09164;
+  --green: #2d8a52;
+  --green-bg: rgba(45, 138, 82, 0.08);
+  --red: #c0392b;
+  --red-bg: rgba(192, 57, 43, 0.08);
+  --blue: #2d6b8a;
+  --blue-bg: rgba(45, 107, 138, 0.08);
+  --purple: #7c5caa;
+  --purple-bg: rgba(124, 92, 170, 0.08);
+
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+
+  /* Layout */
+  --radius: 12px;
+  --radius-sm: 8px;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 4px 16px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+
+body {
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideLoader {
+  0% { transform: translateX(-120%); }
+  100% { transform: translateX(280%); }
+}

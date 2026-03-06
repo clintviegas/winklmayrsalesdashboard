@@ -1,0 +1,120 @@
+/* ═══════ HEADER ═══════ */
+.dash-header {
+  background: var(--black);
+  padding: 14px var(--space-xl);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.dash-header-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+  max-width: 600px;
+}
+
+.header-logo {
+  height: 70px;
+  width: auto;
+  object-fit: contain;
+  filter: brightness(1.05);
+}
+
+.header-logo-white {
+  filter: brightness(2.2) contrast(1.1);
+}
+
+/* Ribbon: Scalify logo + white title logo */
+.ribbon-area {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.ribbon-divider {
+  font-size: 42px;
+  font-weight: 300;
+  color: #D4AF37;
+  opacity: 0.7;
+  line-height: 1;
+  margin: 0 2px;
+}
+
+.ribbon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.ribbon-link:hover {
+  opacity: 0.8;
+}
+
+.ribbon-scalify-logo {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+  filter: brightness(1.05);
+}
+
+.dash-header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+.dash-status {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.35);
+  font-family: 'DM Mono', monospace;
+}
+
+.dash-refresh {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 8px 18px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.dash-refresh:hover {
+  background: #FF5722;
+  border-color: #FF5722;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .dash-header {
+    padding: 12px var(--space-md);
+  }
+  .header-logo {
+    height: 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dash-header-right {
+    display: none;
+  }
+  .header-logo {
+    height: 42px;
+  }
+}

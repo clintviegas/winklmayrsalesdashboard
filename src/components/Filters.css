@@ -1,0 +1,183 @@
+/* ═══════ FILTERS ═══════ */
+.filters-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: var(--space-lg);
+}
+
+/* Date Section */
+.filter-section--date {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.date-presets {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.date-preset-btn {
+  padding: 8px 18px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface-alt);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.date-preset-btn:hover {
+  border-color: var(--orange);
+  color: var(--orange);
+}
+
+.date-preset-btn.active {
+  background: var(--orange);
+  border-color: var(--orange);
+  color: #fff;
+}
+
+.date-custom-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  animation: fadeInUp 0.25s ease-out;
+}
+
+.date-separator {
+  color: var(--text-muted);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Dropdowns Section */
+.filter-section--dropdowns {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 14px;
+}
+
+/* Individual Filter */
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.filter-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.select-wrapper {
+  position: relative;
+}
+
+.filter-select {
+  width: 100%;
+  padding: 10px 36px 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  color: var(--text);
+  background: var(--surface-alt);
+  appearance: none;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.filter-select:focus {
+  outline: none;
+  border-color: var(--orange);
+}
+
+.select-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.filter-input {
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  color: var(--text);
+  background: var(--surface-alt);
+  transition: border-color 0.2s;
+  flex: 1;
+  min-width: 150px;
+}
+
+.filter-input:focus {
+  outline: none;
+  border-color: var(--orange);
+}
+
+/* Reset Button */
+.filter-reset {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  align-self: flex-start;
+  padding: 10px 20px;
+  background: var(--orange-light);
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--orange);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filter-reset:hover {
+  background: var(--orange);
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .filter-section--dropdowns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .date-custom-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .date-separator {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .filter-section--dropdowns {
+    grid-template-columns: 1fr;
+  }
+  .date-presets {
+    flex-direction: column;
+  }
+}
