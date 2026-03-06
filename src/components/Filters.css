@@ -161,23 +161,78 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+  .filters-container {
+    padding: var(--space-md);
+    gap: var(--space-sm);
+    margin-bottom: var(--space-md);
+  }
   .filter-section--dropdowns {
     grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-sm);
   }
   .date-custom-row {
     flex-direction: column;
     align-items: stretch;
+    gap: 8px;
   }
   .date-separator {
     text-align: center;
+    display: none;
+  }
+  .date-presets {
+    gap: 6px;
+  }
+  .date-preset-btn {
+    padding: 6px 14px;
+    font-size: 12px;
   }
 }
 
 @media (max-width: 480px) {
+  .filters-container {
+    padding: var(--space-sm);
+    gap: 10px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+  }
+  .filter-section {
+    margin-bottom: 12px;
+  }
+  .filter-section-title {
+    font-size: 10px;
+    margin-bottom: 8px;
+  }
+  .filter-section--date {
+    gap: 8px;
+  }
   .filter-section--dropdowns {
     grid-template-columns: 1fr;
+    gap: 8px;
   }
   .date-presets {
     flex-direction: column;
+    gap: 6px;
+  }
+  .date-preset-btn {
+    padding: 8px 12px;
+    font-size: 11px;
+    width: 100%;
+  }
+  .date-custom-row {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .filter-input {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .select-custom {
+    font-size: 13px;
+    padding: 10px;
+  }
+  .filter-reset {
+    padding: 6px 12px;
+    font-size: 12px;
+    width: auto;
   }
 }

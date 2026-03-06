@@ -203,3 +203,36 @@
     gap: 4px;
   }
 }
+
+@media (max-width: 480px) {
+  .dash-main {
+    padding: var(--space-md) 12px 30px;
+    max-width: 100%;
+  }
+  .dash-title {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  .dash-subtitle {
+    font-size: 12px;
+  }
+  .dash-title-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    margin-bottom: 16px;
+  }
+  .data-error {
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+  .data-error-title {
+    font-size: 12px;
+  }
+  .data-error-body {
+    font-size: 11px;
+  }
+  .data-error-hint {
+    font-size: 10px;
+  }
+}

@@ -212,4 +212,54 @@ tbody tr:last-child td {
   .table-search {
     width: 100%;
   }
+  .sales-table-container {
+    padding: var(--space-md);
+    margin-bottom: var(--space-md);
+    border-radius: 8px;
+  }
+  table {
+    font-size: 12px;
+  }
+  .table-pagination {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sales-table-container {
+    padding: var(--space-sm);
+    margin-bottom: 12px;
+    border-radius: 6px;
+    overflow-x: auto;
+  }
+  .table-toolbar {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+  .table-search {
+    width: 100%;
+    font-size: 13px;
+    padding: 8px;
+  }
+  table {
+    font-size: 11px;
+    margin-bottom: 8px;
+  }
+  thead th {
+    padding: 8px 4px;
+    font-size: 10px;
+  }
+  tbody td {
+    padding: 8px 4px;
+    font-size: 11px;
+  }
+  .table-pagination {
+    font-size: 11px;
+    gap: 6px;
+  }
+  .pagination-button {
+    padding: 4px 8px;
+    font-size: 10px;
+  }
 }

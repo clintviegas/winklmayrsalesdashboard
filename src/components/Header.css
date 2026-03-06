@@ -16,11 +16,11 @@
   align-items: center;
   gap: 8px;
   flex: 1;
-  max-width: 600px;
+  min-width: 0;
 }
 
 .header-logo {
-  height: 35px;
+  height: 33px;
   width: auto;
   object-fit: contain;
   filter: brightness(1.05);
@@ -35,17 +35,19 @@
 .ribbon-area {
   display: flex;
   align-items: center;
-  gap: 2px;
-  height: 50px;
+  gap: 1px;
+  height: 45px;
+  min-width: 0;
 }
 
 .ribbon-divider {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 300;
   color: #D4AF37;
   opacity: 0.7;
   line-height: 1;
-  margin: 0 2px;
+  margin: 0 1px;
+  flex-shrink: 0;
 }
 
 .ribbon-link {
@@ -105,24 +107,53 @@
 
 @media (max-width: 768px) {
   .dash-header {
-    padding: 12px var(--space-md);
+    padding: 8px 12px;
+    justify-content: center;
+  }
+  .dash-header-left {
+    flex: 0;
   }
   .header-logo {
-    height: 60px;
+    height: 30px;
+    margin-top: 6px;
   }
   .ribbon-scalify-logo {
-    height: 48px;
+    height: 38px;
+  }
+  .ribbon-area {
+    height: 45px;
+    gap: 2px;
+  }
+  .ribbon-divider {
+    font-size: 26px;
+    margin: 0 1px;
   }
 }
 
 @media (max-width: 480px) {
+  .dash-header {
+    padding: 6px 12px;
+    justify-content: center;
+  }
+  .dash-header-left {
+    flex: 0;
+  }
   .dash-header-right {
     display: none;
   }
   .header-logo {
-    height: 50px;
+    height: 24px;
+    margin-top: 4px;
   }
   .ribbon-scalify-logo {
-    height: 42px;
+    height: 28px;
+  }
+  .ribbon-area {
+    height: 40px;
+    gap: 1px;
+  }
+  .ribbon-divider {
+    font-size: 20px;
+    margin: 0 1px;
   }
 }
