@@ -63,6 +63,41 @@ body {
   min-height: 100vh;
 }
 
+/* ═══════ RESPONSIVE TYPOGRAPHY ═══════ */
+/* Fluid font scaling using calc() */
+/* Scales smoothly between mobile and desktop */
+
+h1 {
+  font-size: calc(20px + 1.5vw);
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: calc(18px + 1.2vw);
+  line-height: 1.25;
+}
+
+h3 {
+  font-size: calc(16px + 1vw);
+  line-height: 1.3;
+}
+
+.text-lg {
+  font-size: calc(15px + 0.5vw);
+}
+
+.text-base {
+  font-size: calc(14px + 0.3vw);
+}
+
+.text-sm {
+  font-size: calc(12px + 0.2vw);
+}
+
+.text-xs {
+  font-size: calc(10px + 0.1vw);
+}
+
 /* Scrollbar styling */
 ::-webkit-scrollbar {
   width: 6px;

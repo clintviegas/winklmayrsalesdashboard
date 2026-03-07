@@ -42,7 +42,7 @@
 }
 
 .ribbon-divider {
-  font-size: 24px;
+  font-size: calc(20px + 0.5vw);
   font-weight: 300;
   color: #D4AF37;
   opacity: 0.7;

@@ -18,7 +18,7 @@
 }
 
 .dash-title {
-  font-size: 26px;
+  font-size: calc(20px + 1.2vw);
   font-weight: 600;
   color: var(--text);
   letter-spacing: -0.3px;
@@ -30,7 +30,7 @@
 }
 
 .dash-subtitle {
-  font-size: 13px;
+  font-size: calc(11px + 0.3vw);
   color: var(--text-secondary);
   margin-top: 4px;
 }
@@ -47,19 +47,19 @@
 
 .data-error-title {
   font-weight: 700;
-  font-size: 13px;
+  font-size: calc(11px + 0.2vw);
   margin-bottom: 4px;
 }
 
 .data-error-body {
-  font-size: 12px;
+  font-size: calc(10px + 0.2vw);
   color: var(--text-secondary);
   line-height: 1.4;
 }
 
 .data-error-hint {
   margin-top: 8px;
-  font-size: 11px;
+  font-size: calc(9px + 0.1vw);
   color: var(--text-muted);
   line-height: 1.4;
 }
