@@ -54,7 +54,7 @@
 }
 
 .kpi-value {
-  font-size: calc(22px + 1.5vw);
+  font-size: calc(20px + 0.8vw);
   font-weight: 700;
   color: var(--text);
   letter-spacing: -0.5px;

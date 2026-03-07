@@ -39,8 +39,8 @@ const doughnutCenterTextPlugin = {
 
     // Scale text offsets based on chart height for better mobile support
     const heightScale = height / 300; // 300px is the base height
-    const subtextOffset = 28 * heightScale;
-    const textOffset = 10 * heightScale;
+    const subtextOffset = 16 * heightScale; // Reduced from 28 for tighter centering
+    const textOffset = 2 * heightScale; // Reduced from 10 for better centering
 
     if (subtext) {
       ctx.font = '14px DM Sans';
