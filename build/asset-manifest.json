@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.245c1368.css",
-    "main.js": "/static/js/main.1630c0fd.js",
+    "main.css": "/static/css/main.cf0116c0.css",
+    "main.js": "/static/js/main.8b2fbbad.js",
     "static/media/winklmayr-wordmark.svg": "/static/media/winklmayr-wordmark.bdc92606636f85b7a80d358689af16fc.svg",
     "static/media/scalify-footer.svg": "/static/media/scalify-footer.2b8e03d80a30aa0b95a3f0bc301eaeeb.svg",
     "static/media/title-logo.svg": "/static/media/title-logo.ab60a2d17601035952b529aba2cae06d.svg",
     "index.html": "/index.html",
-    "main.245c1368.css.map": "/static/css/main.245c1368.css.map",
-    "main.1630c0fd.js.map": "/static/js/main.1630c0fd.js.map"
+    "main.cf0116c0.css.map": "/static/css/main.cf0116c0.css.map",
+    "main.8b2fbbad.js.map": "/static/js/main.8b2fbbad.js.map"
   },
   "entrypoints": [
-    "static/css/main.245c1368.css",
-    "static/js/main.1630c0fd.js"
+    "static/css/main.cf0116c0.css",
+    "static/js/main.8b2fbbad.js"
   ]
 }

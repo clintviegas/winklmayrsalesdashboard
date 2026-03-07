@@ -66,6 +66,27 @@
   font-size: 14px;
 }
 
+/* Doughnut Chart Legend Styling */
+.chart-card canvas {
+  max-height: 280px !important;
+}
+
+/* Force legend items to wrap in 2-column grid on larger screens */
+@media (min-width: 768px) {
+  .chart-card .chartjs-legend {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 12px !important;
+    max-width: 100% !important;
+  }
+  
+  .chart-card .chartjs-legend li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start !important;
+  }
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
   .charts-row {

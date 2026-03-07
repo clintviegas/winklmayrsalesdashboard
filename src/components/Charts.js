@@ -233,10 +233,11 @@ function Charts({ data }) {
         position: 'bottom',
         labels: {
           font: { family: 'DM Sans', size: 12 },
-          padding: 16,
+          padding: 12,
           usePointStyle: true,
           pointStyleWidth: 10,
         },
+        maxWidth: 800,
       },
       tooltip: {
         ...TOOLTIP_STYLE,
