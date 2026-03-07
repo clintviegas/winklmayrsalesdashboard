@@ -52,11 +52,14 @@
 
 .table-wrap {
   overflow-x: auto;
+  min-height: 300px;
 }
 
 table {
   width: 100%;
+  min-width: 1200px;
   border-collapse: collapse;
+  table-layout: fixed;
 }
 
 thead th {
@@ -73,6 +76,8 @@ thead th {
   white-space: nowrap;
   user-select: none;
   transition: color 0.2s;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 thead th:hover {
@@ -201,6 +206,37 @@ tbody tr:last-child td {
   opacity: 0.3;
   cursor: not-allowed;
 }
+
+/* Column Width Distribution */
+th:nth-child(1),
+td:nth-child(1) { width: 11%; } /* DATE */
+
+th:nth-child(2),
+td:nth-child(2) { width: 9%; } /* CUSTOMER */
+
+th:nth-child(3),
+td:nth-child(3) { width: 10%; } /* CATEGORY */
+
+th:nth-child(4),
+td:nth-child(4) { width: 12%; } /* SUB CATEGORY */
+
+th:nth-child(5),
+td:nth-child(5) { width: 18%; } /* DESCRIPTION */
+
+th:nth-child(6),
+td:nth-child(6) { width: 12%; } /* MATERIAL */
+
+th:nth-child(7),
+td:nth-child(7) { width: 10%; } /* COLOR */
+
+th:nth-child(8),
+td:nth-child(8) { width: 7%; } /* QTY */
+
+th:nth-child(9),
+td:nth-child(9) { width: 10%; } /* PRICE */
+
+th:nth-child(10),
+td:nth-child(10) { width: 10%; } /* TOTAL */
 
 /* Responsive */
 @media (max-width: 768px) {
