@@ -209,22 +209,22 @@ tbody tr:last-child td {
 
 /* Column Width Distribution */
 th:nth-child(1),
-td:nth-child(1) { width: 11%; } /* DATE */
+td:nth-child(1) { width: 10%; } /* DATE */
 
 th:nth-child(2),
-td:nth-child(2) { width: 9%; } /* CUSTOMER */
+td:nth-child(2) { width: 8%; } /* CUSTOMER */
 
 th:nth-child(3),
-td:nth-child(3) { width: 10%; } /* CATEGORY */
+td:nth-child(3) { width: 9%; } /* CATEGORY */
 
 th:nth-child(4),
-td:nth-child(4) { width: 12%; } /* SUB CATEGORY */
+td:nth-child(4) { width: 11%; } /* SUB CATEGORY */
 
 th:nth-child(5),
-td:nth-child(5) { width: 18%; } /* DESCRIPTION */
+td:nth-child(5) { width: 14%; } /* DESCRIPTION */
 
 th:nth-child(6),
-td:nth-child(6) { width: 12%; } /* MATERIAL */
+td:nth-child(6) { width: 14%; } /* MATERIAL */
 
 th:nth-child(7),
 td:nth-child(7) { width: 10%; } /* COLOR */
